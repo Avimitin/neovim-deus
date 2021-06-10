@@ -249,9 +249,9 @@ local navyblue = {'#6699CC', 63,  'blue'}
 ]]
 
 --[[ DO NOT EDIT `BG` NOR `FG`. ]]
--- local BG = 'bg'
+local BG = 'bg'
 local FG = 'fg'
--- local NONE = {}
+local NONE = {}
 
 --[[ These are the ones you should edit. ]]
 -- This is the only highlight that must be defined separately.
