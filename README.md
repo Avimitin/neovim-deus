@@ -13,5 +13,14 @@ Neovim v0.5+
 
 ## Known issues
 
-Theme doesn't take effect on the neovim with version: 
-`NVIM v0.5.0-dev+1390-g988f88c24`
+~~Theme doesn't take effect on the neovim with version: 
+`NVIM v0.5.0-dev+1390-g988f88c24`~~
+
+If you have problems like the colorscheme looks like default, you 
+can try to set termguicolors before setting the theme.
+
+```vim
+set termguicolors
+
+color deus
+```
