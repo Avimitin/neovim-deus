@@ -24,3 +24,7 @@ set termguicolors
 
 color deus
 ```
+
+Checks 
+[Color doesn't changed after installed the plugin #11](https://github.com/Iron-E/nvim-highlite/issues/11)
+for more details.
