@@ -1,0 +1,23 @@
+{
+	"name": "deus",
+	"background": "#2C323B",
+	"black": "#242A32",
+	"blue": "#83A598",
+	"brightBlack": "#666666",
+	"brightBlue": "#73BA9F",
+	"brightCyan": "#2BCEC2",
+	"brightGreen": "#90C966",
+	"brightPurple": "#C858E9",
+	"brightRed": "#EC3E45",
+	"brightWhite": "#FFFFFF",
+	"brightYellow": "#EDBF69",
+	"cursorColor": "#FBFFD5",
+	"cyan": "#70C0BA",
+	"foreground": "#EAEAEA",
+	"green": "#98C379",
+	"purple": "#C678DD",
+	"red": "#D54E53",
+	"selectionBackground": "#FFFFFF",
+	"white": "#EAEAEA",
+	"yellow": "#E5C07B"
+}

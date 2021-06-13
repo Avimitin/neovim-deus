@@ -1,0 +1,30 @@
+colors:
+  # Deus theme, based on:
+  # https://github.com/ajmwagar/vim-deus
+
+  # Default colors
+  primary:
+    background: '0x2c323b'
+    foreground: '0xeaeaea'
+
+  # Normal colors
+  normal:
+    black:   '0x242a32'
+    red:     '0xd54e53'
+    green:   '0x98c379'
+    yellow:  '0xe5c07b'
+    blue:    '0x83a598'
+    magenta: '0xc678dd'
+    cyan:    '0x70c0ba'
+    white:   '0xeaeaea'
+
+  # Bright colors
+  bright:
+    black:   '0x666666'
+    red:     '0xec3e45'
+    green:   '0x90c966'
+    yellow:  '0xedbf69'
+    blue:    '0x73ba9f'
+    magenta: '0xc858e9'
+    cyan:    '0x2bcec2'
+    white:   '0xffffff'
