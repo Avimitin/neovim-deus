@@ -16,13 +16,20 @@ Neovim v0.5+
 ~~Theme doesn't take effect on the neovim with version: 
 `NVIM v0.5.0-dev+1390-g988f88c24`~~
 
-If you have problems like the colorscheme looks like default, you 
+If your neovim have problems like the colorscheme looks like default, you 
 can try to set termguicolors before setting the theme.
+
+Example fix:
 
 ```vim
 set termguicolors
 
-color deus
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+set background=dark    " Setting dark mode
+colorscheme deus
+let g:deus_termcolors=256
 ```
 
 Checks 
