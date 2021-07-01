@@ -27,6 +27,11 @@ Plug 'Avimitin/neovim-deus', { 'tag': 'v0.1' }
 Plug 'Avimitin/neovim-deus'
 ```
 
+## Terminal theme
+
+Alacritty, Windows Terminal and simple terminal theme is supported. Copy the 
+setting from `./terminals` and applied it to your terminal.
+
 ## Known issues
 
 ~~Theme doesn't take effect on the neovim with version: 
