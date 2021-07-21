@@ -874,6 +874,9 @@ local highlight_groups = {
 	ReferencesIcon = 'DefinitionIcon',
 	TargetFileName = 'Directory',
 	TargetWord = 'Title',
+
+	--[[ 4.4.13 nvimtree.lua]]
+	VertSplit = { fg=dsdark0 },
 }
 
 --[[ Step 5: Terminal Colors
