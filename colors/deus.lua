@@ -340,7 +340,7 @@ local highlight_groups = {
 	--[[ 4.2.3. Conditional Line Highlighting]]
 	Conceal = 'NonText',
 	CursorLine      = {bg=gray_darker},
-	CursorLineNr    = {bg=gray_darker, fg=dslight1},
+	CursorLineNr    = {bg=gray_darker, fg=dslight1, style='bold'},
 	debugBreakpoint = 'ErrorMsg',
 	debugPC         = 'ColorColumn',
 	LineNr          = {fg=gray},
