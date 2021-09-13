@@ -81,7 +81,7 @@ vim.g.colors_name = 'deus'
 	NOTE: |Replace-mode| will probably be useful here.
 ]]
 
-local black       = {'#1a1f26', 235, 'black'}
+local black       = {'#1a1d22', 235, 'black'}
 local gray_dark   = {'#3c3836', 237, 'darkgrey'}
 local gray_darker = {'#242a32', 239, 'gray'}
 local gray        = {'#928374', 245, 'gray'}
