@@ -885,16 +885,60 @@ local highlight_groups = {
 	TargetFileName = 'Directory',
 	TargetWord = 'Title',
 
-	--[[ 4.4.13 nvimtree.lua]]
-    NvimTreeEmptyFolderName = {fg=blue},
-    NvimTreeEndOfBuffer = {fg = gray_darker},
-    NvimTreeFolderIcon = {fg = pink},
-    NvimTreeFolderName = {fg = pink},
-    NvimTreeGitDirty = {fg=red},
 
-    --[[ 4.4.14 IndentBlankLine ]]
-    IndentBlankLineChar = {fg=dsdark3},
-    IndentBlankLineSpaceChar = {fg=dsdark3},
+	--[[ 4.4.13. indent-blankline.nvim ]]
+	IndentBlanklineChar = function(self) return vim.tbl_extend('force', self.Whitespace, {style='nocombine'}) end,
+	IndentBlanklineSpaceChar = 'IndentBlanklineChar',
+
+	--[[ 4.4.14. trouble.nvim ]]
+	TroubleCount = function(self) return vim.tbl_extend('force', self.Number, {style='underline'}) end,
+
+	--[[ 4.4.15. todo-comments.nvim ]]
+	TodoFgFIX = function(self) return {fg=self.ErrorMsg.fg} end,
+	TodoFgHACK = function(self) return {fg=self.Todo.fg} end,
+	TodoFgNOTE = 'HintMsg',
+	TodoFgPERF = 'InfoMsg',
+	TodoFgTODO = {fg=cyan, style='italic'},
+	TodoFgWARN = function(self) return {fg=self.WarningMsg.fg} end,
+
+	TodoBgFIX = function(self) return {fg=black, bg=self.ErrorMsg.fg, style={'bold', 'italic', 'nocombine'}} end,
+	TodoBgHACK = function(self) return {fg=black, bg=self.Todo.fg, style={'bold', 'italic', 'nocombine'}} end,
+	TodoBgNOTE = function(self) return {fg=black, bg=self.Hint.bg, style={'bold', 'italic', 'nocombine'}} end,
+	TodoBgPERF = function(self) return {fg=black, bg=self.Info.bg, style={'bold', 'italic', 'nocombine'}} end,
+	TodoBgTODO = {fg=black, bg=cyan, style={'bold', 'italic', 'nocombine'}},
+	TodoBgWARN = function(self) return {fg=black, bg=self.Warning.bg, style={'bold', 'italic', 'nocombine'}} end,
+
+	TodoSignFIX  = 'TodoFgFIX',
+	TodoSignHACK = 'TodoFgHACK',
+	TodoSignNOTE = 'TodoFgNOTE',
+	TodoSignPERF = 'TodoFgPERF',
+	TodoSignTODO = 'TodoFgTODO',
+	TodoSignWARN = 'TodoFgWARN',
+
+	--[[ 4.4.16. nvim-cmp ]]
+	CmpDocumentationBorder = 'FloatBorder',
+	CmpItemAbbrDefault = 'Comment',
+	CmpItemAbbrMatchDefault = {fg=highlight_group_normal.fg, style={'bold', 'nocombine'}},
+	CmpItemAbbrMatchFuzzyDefault = {fg=highlight_group_normal.fg, style='nocombine'},
+	CmpItemKindDefault = 'Type',
+	CmpItemMenuDefault = 'NormalFloat',
+
+	--[[ 4.4.17. packer.nvim ]]
+	packerFail = 'ErrorMsg',
+	packerHash = 'Number',
+	packerPackageNotLoaded = 'Ignore',
+	packerStatusFail = 'Statement',
+	packerStatusSuccess = 'packerStatusFail',
+	packerSuccess = function(self) return {fg=green, style=self.packerFail.style} end,
+
+	--[[ 4.4.18. nvim-tree ]]
+	NvimTreeGitDeleted = function(self) return {fg=self.DiffDelete.bg, bg=NONE} end,
+	NvimTreeGitDirty = {fg=orange, bg=NONE},
+	NvimTreeGitIgnored = 'Ignore',
+	NvimTreeGitMerge = 'NvimTreeGitRenamed',
+	NvimTreeGitNew = function(self) return {fg=self.DiffAdd.bg, bg=NONE} end,
+	NvimTreeGitRenamed = function(self) return {fg=self.DiffChange.bg, bg=NONE} end,
+	NvimTreeGitStaged = {fg=cyan, bg=NONE},
 }
 
 --[[ Step 5: Terminal Colors
