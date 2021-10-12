@@ -81,7 +81,17 @@ vim.g.colors_name = 'deus'
 	NOTE: |Replace-mode| will probably be useful here.
 ]]
 
-local black       = {'#050607', 235, 'black'}
+local black_hex_code = "#2C323B"
+
+if vim.g.deus_background ~= nil then
+  if vim.g.deus_background == "hard" then
+    black_hex_code = "#050607"
+  elseif vim.g.deus_background == "mid" then
+    black_hex_code = "#1A1B26"
+  end
+end
+
+local black       = {black_hex_code, 235, 'black'}
 local gray_dark   = {'#3c3836', 237, 'darkgrey'}
 local gray_darker = {'#242a32', 239, 'gray'}
 local gray        = {'#928374', 245, 'gray'}
