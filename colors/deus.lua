@@ -886,7 +886,15 @@ local highlight_groups = {
 	TargetWord = 'Title',
 
 	--[[ 4.4.13 nvimtree.lua]]
-	VertSplit = { fg=dsdark0 },
+    NvimTreeEmptyFolderName = {fg=blue},
+    NvimTreeEndOfBuffer = {fg = gray_darker},
+    NvimTreeFolderIcon = {fg = pink},
+    NvimTreeFolderName = {fg = pink},
+    NvimTreeGitDirty = {fg=red},
+
+    --[[ 4.4.14 IndentBlankLine ]]
+    IndentBlankLineChar = {fg=dsdark3},
+    IndentBlankLineSpaceChar = {fg=dsdark3},
 }
 
 --[[ Step 5: Terminal Colors
