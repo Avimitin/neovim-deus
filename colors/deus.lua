@@ -939,7 +939,10 @@ local highlight_groups = {
 	NvimTreeGitNew = function(self) return {fg=self.DiffAdd.bg, bg=NONE} end,
 	NvimTreeGitRenamed = function(self) return {fg=self.DiffChange.bg, bg=NONE} end,
 	NvimTreeGitStaged = {fg=cyan, bg=NONE},
-	NvimTreeVertSplit = {fg=dsdark0, bg=NONE}
+	NvimTreeVertSplit = {fg=dsdark0, bg=NONE},
+
+	--[[4.4.19 symbols-outline]]
+	FocusedSymbol = {bg=navyblue},
 }
 
 --[[ Step 5: Terminal Colors
