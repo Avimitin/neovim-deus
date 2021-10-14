@@ -272,7 +272,7 @@ local highlight_groups = {
 	Comment     = {fg=gray, style='italic'},
 	NonText     = {fg=gray_darker},
 	EndOfBuffer = 'NonText',
-	Whitespace  = 'NonText',
+	Whitespace  = {fg=dsdark3},
 
 	--[[ 4.1.1. Literals]]
 	Constant  = {fg=orange_light},
