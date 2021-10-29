@@ -752,7 +752,7 @@ local highlight_groups = {
 	--[[ 4.3.34. Git ]]
 	diffAdded = 'DiffAdd',
 	diffRemoved = 'DiffDelete',
-	gitcommitHeader = 'SpecialComment',
+	gitcommitHeader = {fg=magenta_light2, style={'bold', 'nocombine'}},
 	gitcommitDiscardedFile = 'gitcommitSelectedFile',
 	gitcommitOverFlow = 'Error',
 	gitcommitSelectedFile = 'Directory',
