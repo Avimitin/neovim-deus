@@ -329,8 +329,8 @@ local highlight_groups = {
 	Todo              = {fg=yellow,   style={'bold', 'underline'}},
 	helpHyperTextJump = 'Underlined',
 	helpSpecial       = 'Function',
-	Hint              = {bg=magenta,    fg=black, style='bold'},
-	Info              = {bg=pink_light, fg=black, style='bold'},
+	Hint              = {bg=dsdark4_256,    fg=black, style='italic'},
+	Info              = {bg=dslight4, fg=black, style='italic'},
 	Warning           = {bg=orange,     fg=black, style='bold'},
 
 	--[[ 4.2... Editor UI  ]]
@@ -344,7 +344,7 @@ local highlight_groups = {
 	VertSplit   = {fg=dsdark0},
 	TabLine     = {bg=gray_darker, fg=dsdark4},
 	TabLineFill = {bg=blue},
-	TabLineSel  = {fg=dslight3},
+	TabLineSel  = {fg=highlight_group_normal.bg},
 	Title       = {fg=dslight3},
 
 	--[[ 4.2.3. Conditional Line Highlighting]]
@@ -392,13 +392,33 @@ local highlight_groups = {
 
 	--[[ 4.2.10. Messages]]
 	ErrorMsg   = {fg=red,          style='bold'},
-	-- HintMsg    = {fg=magenta,      style='bold'},
-	InfoMsg    = {fg=green},
+	HintMsg    = {fg=pink, style='italic'},
+	InfoMsg    = {fg=navyblue,   style='italic'},
 	ModeMsg    = {fg=yellow},
-	WarningMsg = {fg=orange},
+	WarningMsg = {fg=orange,       style='bold'},
 	Question   = {fg=orange_light, style='underline'},
 
 	--[[ 4.2.11. LSP ]]
+  DiagnosticError = 'Error',
+	DiagnosticFloatingError = 'ErrorMsg',
+	DiagnosticSignError = 'DiagnosticFloatingError',
+
+	DiagnosticWarn = 'Warning',
+	DiagnosticFloatingWarn = 'WarningMsg',
+	DiagnosticSignWarn = 'DiagnosticFloatingWarn',
+
+	DiagnosticHint = 'Hint',
+	DiagnosticFloatingHint = 'HintMsg',
+	DiagnosticSignHint = 'DiagnosticFloatingHint',
+
+	DiagnosticInfo = 'Info',
+	DiagnosticFloatingInfo = 'InfoMsg',
+	DiagnosticSignInfo = 'DiagnosticFloatingInfo',
+
+	DiagnosticUnderlineError = {style={'undercurl', color=red}},
+	DiagnosticUnderlineHint  = {style={'undercurl', color=navyblue}},  
+	DiagnosticUnderlineInfo  = {style={'undercurl', color=navyblue}},
+	DiagnosticUnderlineWarn = {style={'undercurl', color=orange}},
 	LspDiagnosticsError = 'Error',
 	LspDiagnosticsErrorFloating = 'ErrorMsg',
 	LspDiagnosticsErrorSign = 'ErrorMsg',
@@ -859,7 +879,7 @@ local highlight_groups = {
 	BufferInactiveSign   = 'BufferVisibleSign',
 	BufferInactiveTarget = 'BufferVisibleTarget',
 
-	BufferTabpages    = {fg=BG, bg=FG, style='bold'},
+	BufferTabpages    = {fg=highlight_group_normal.bg, bg=FG, style='bold'},
 	BufferTabpageFill = 'TabLineFill',
 
 	BufferVisible       = 'TabLine',
